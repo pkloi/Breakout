@@ -1,0 +1,41 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 312 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (c:/BuildAgent/work/5ff2f6c26000d570/src/hotspot/share/memory/allocation.cpp:46), pid=28428, tid=26400
+#
+# JRE version: OpenJDK Runtime Environment (11.0.5+10) (build 11.0.5+10-b520.38)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.5+10-b520.38, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -javaagent:E:\IDEA\IntelliJ IDEA Community Edition 2019.3.3\lib\idea_rt.jar=50428:E:\IDEA\IntelliJ IDEA Community Edition 2019.3.3\bin -Dfile.encoding=UTF-8 MainGame
+
+Host: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz, 2 cores, 1G,  Windows 10 , 64 bit Build 17763 (10.0.17763.475)
+Time: Wed Apr 15 14:31:49 2020 ?D1¨²¡À¨º¡Á?¨º¡À?? elapsed time: 28 seconds (0d 0h 0m 28s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001e763d0e800):  JavaThread "Timer-2746" [_thread_in_vm, id=26400, stack(0x0000003eabe00000,0x0000003eabf00000)]
+
+Stack: [0x0000003eabe00000,0x0000003eabf00000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x5dcafa]
